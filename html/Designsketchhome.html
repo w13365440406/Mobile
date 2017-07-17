@@ -1,0 +1,179 @@
+<header class="mo_header">
+	<a class="mo_logo">
+		<img src="../images/logo.png" alt="">
+	</a>
+	<div class="mo_word">·效果图</div>
+	<div class="mo_horizontal">
+		<button class="mo_img"><i></i></button>
+	</div>
+</header>
+<main class="mo_content">
+	<section class="mo_search" >
+		<form class="mo_search_form">
+			<div class="mo_search_box" >
+				<input type="text" placeholder="输入你想看的家居美服"><input type="button" name="" value="搜索"> 
+			</div>
+		</form>
+	</section>
+	<section class="mo_container">
+		<div class="mo_container_center">
+			<div class="mo_container_div">
+				<a href="#">
+					<img src="../images/sofa3.jpg" alt="">
+					<span class="title">公寓</span>
+				</a>
+			</div>
+			<div class="mo_container_div_box">
+				<div class="mo_container_small">
+					<a href="#">
+						<img src="../images/sofas.jpg" alt="">
+						<span class="title">别墅</span>
+					</a>
+				</div>
+				<div class="mo_container_small mo_to">
+					<a href="#">
+						<div class="mo_Apartment_box">
+							<div class="mo_Apartment_layout">户型</div>
+							<div class="mo_layout_sums">查看更多></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mo_layout_box">
+			<div class="mo_layout">户型<br>TYPE</div>
+			<div class="mo_layout_name">
+				<a href="">小户型</a>
+				<a href="">一居</a>
+				<a href="">二居</a>
+				<a href="">三居</a>
+				<a href="">四居</a>
+				<a href="">复式</a>
+			</div>
+		</div>
+	</section>
+	<section class="mo_container">
+		<div class="mo_container_center">
+			<div class="mo_container_div">
+				<a href="#">
+					<img src="../images/study.jpg" alt="">
+					<span class="title">榻榻米</span>
+				</a>
+			</div>
+			<div class="mo_container_div_box">
+				<div class="mo_container_small">
+					<a href="#">
+						<img src="../images/Cabinet.jpg" alt="">
+						<span class="title">阁楼</span>
+					</a>
+				</div>
+				<div class="mo_container_small mo_to">
+					<a href="#">
+						<div class="mo_Apartment_box">
+							<div class="mo_Apartment_layout">局部</div>
+							<div class="mo_layout_sums">查看更多></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mo_layout_box">
+			<div class="mo_layout">局部<br>LAYOUT</div>
+			<div class="mo_layout_name">
+				<a href="">背景墙</a>
+				<a href="">窗帘</a>
+				<a href="">飘窗</a>
+				<a href="">橱柜</a>
+				<a href="">隔断</a>
+				<a href="">吊顶</a>
+			</div>
+		</div>
+	</section>
+	<section class="mo_container">
+		<div class="mo_container_center">
+			<div class="mo_container_div">
+				<a href="#">
+					<img src="../images/bedrom5.jpg" alt="">
+					<span class="title">书房</span>
+				</a>
+			</div>
+			<div class="mo_container_div_box">
+				<div class="mo_container_small">
+					<a href="#">
+						<img src="../images/Cabinet1.jpg" alt="">
+						<span class="title">儿童房</span>
+					</a>
+				</div>
+				<div class="mo_container_small mo_to">
+					<a href="#">
+						<div class="mo_Apartment_box">
+							<div class="mo_Apartment_layout">空间</div>
+							<div class="mo_layout_sums">查看更多></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mo_layout_box">
+			<div class="mo_layout">空间<br>SPACE</div>
+			<div class="mo_layout_name">
+				<a href="">客厅</a>
+				<a href="">卧室</a>
+				<a href="">餐厅</a>
+				<a href="">厨房</a>
+				<a href="">卫生间</a>
+				<a href="">阳台</a>
+			</div>
+		</div>
+	</section>
+	<section class="mo_container">
+		<div class="mo_container_center">
+			<div class="mo_container_div">
+				<a href="#">
+					<img src="../images/Kitchen6.jpg" alt="">
+					<span class="title">混搭</span>
+				</a>
+			</div>
+			<div class="mo_container_div_box">
+				<div class="mo_container_small">
+					<a href="#">
+						<img src="../images/sofa2.jpg" alt="">
+						<span class="title">日式</span>
+					</a>
+				</div>
+				<div class="mo_container_small mo_to">
+					<a href="#">
+						<div class="mo_Apartment_box">
+							<div class="mo_Apartment_layout">风格</div>
+							<div class="mo_layout_sums">查看更多></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mo_layout_box">
+			<div class="mo_layout">风格<br>STYLE</div>
+			<div class="mo_layout_name">
+				<a href="">简约</a>
+				<a href="">现代</a>
+				<a href="">中式</a>
+				<a href="">欧式</a>
+				<a href="">田园</a>
+				<a href="">地中海</a>
+			</div>
+		</div>
+	</section>
+	<section class="mo_container_hot">
+		<div class="mo_container_box">
+			<a><button class="mo_hot" ng-click = "getData()">热门标签<i></i></button></a>
+		</div>
+		<div class="mo_hot_box"  ng-show = "isShow">
+			<ul class="mo_hot_label" ng-repeat = "person1 in dataList">
+				<a href="#!{{person1.Url}}"><li>{{person1.Word}}</li><a>
+			</ul>
+		</div>
+	</section>
+</main>
+<footer class="mo_ownership">
+		<div>爱福窝版权所有<br>copyright 2016 fuwo.com</div>
+</footer>
