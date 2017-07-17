@@ -1,0 +1,235 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: black;
+    // background-color: #cccccc;
+}
+html,body{
+    height:100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input,button{
+    border:none;
+    outline: none;
+    -webkit-appearance:none;
+}
+ul,ol{
+    list-style: none;
+}
+.vr_header{
+    max-width:1024px;
+    min-width:360px;
+    margin:auto;
+}
+.vr_header>.div_header{
+    position: fixed;
+    width: 100%;
+    max-width:1024px;
+    min-width:360px;
+    z-index: 1000;
+}
+.vr_header>.div_header>.head_logo{
+    background:white;
+}
+.vr_header>.div_header>.head_logo>a{
+    display: inline-block;
+    width:104px;
+    height:20px;
+    padding: 12px 10px;
+    // background-color: #f8f8f8;
+    vertical-align: top;
+    height:44px;
+}
+.vr_header>.div_header>.head_logo>a>img{
+    width:84px;
+    height: 20px;
+}
+.vr_header>.div_header>.head_logo>button{
+    padding:12px;
+    border:none;
+    float: right;
+    background-color: rgb(255,255,255);
+}
+.vr_header>.div_header>.head_logo>button>i{
+    width:20px;
+    height:20px;
+    background: url(../images/icon_nav-caidan.png) no-repeat center;
+    background-size: 20px 20px;
+    display:block;
+}
+/* screening */
+*{ box-sizing:border-box; padding:0px; margin:0px;}
+div.screening{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    /*position: fixed;*/
+    z-index: 4;
+    position:relative;
+}
+.screening_div>div{
+    display:none;
+    position:absolute;
+    position:fixed;
+    width:100%;
+    height:1000px;
+    background:rgba(0,0,0,0.4);
+    z-index:1;
+    max-width:1024px;
+    min-width:360px;
+}
+div.screening>ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: solid 1px rgb(230,230,230);
+    border-bottom: solid 1px rgb(230,230,230);
+    overflow: hidden;
+}
+div.screening>ul>li{
+    float: left;
+    // font-size:0.75em;
+    width: 50%;
+    text-align: center;
+    line-height: 3rem;
+    border-left: solid 1px rgb(230,230,230);
+}
+div.screening>ul>.Regional{
+    border-left:none;
+}
+div.screening>ul>li>span{
+    background: url("../images/icon_40_arrow_b_n.png") no-repeat right center;
+    background-size:20px 20px ;
+    padding-right:20px;
+    color:#666;
+}
+div.screening>ul>.current>span{
+    background: url("../images/icon_40_arrow_t_a.png") no-repeat  right center;
+    background-size:20px 20px;
+    color: #33b371;
+}
+.div_header>.grade_eject{
+    max-width:1024px;
+    min-width:360px;
+}
+.div_header>.grade_eject>.grade_w,.div_header>.grade_eject>.size_w{
+    position:fixed;
+    width:100%;
+    text-align:center;
+    background-color: #f5f5f5;
+    display:none;
+    z-index:100;
+    max-width:1024px;
+    min-width:360px;
+}
+.div_header>.grade_eject>.grade_show{
+    display:block;
+}
+.div_header>.grade_eject>.grade_w>li,.div_header>.grade_eject>.size_w>li{
+    display:inline-block;
+    width:26%;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    color:#666;
+    text-align:center;
+    margin:10px;
+    line-height:30px;
+    background-color: white;
+    z-index:100;
+}
+.div_header>.grade_eject>.grade_w>.Selected_grade,.div_header>.grade_eject>.size_w>.Selected_size{
+    color: #33b371;
+    border-color: #33b371;
+}
+
+/* vr房子 */
+section{
+    width:100%;
+    background:white;
+    padding-top: 94px;
+    max-width:1024px;
+    min-width:360px;
+    margin:auto;
+    min-height: 93%;
+}
+section>.House_vr>li:nth-child(1){
+    margin-top: 10px;
+}
+section>.House_vr>li{
+    width:100%;
+    margin-bottom: 10px;
+    // padding:0px 10px;
+}
+section>.House_vr>li>a{
+    position:relative;
+    width:100%;
+    display:block;
+    display:flex;
+}
+section>.House_vr>li>a>.vr_img{
+    width:100%;
+
+}
+section>.House_vr>li>a>.vr_img>img{
+    width:100%;
+    display:block;
+    border-radius:6px;
+}
+section>.House_vr>li>a>.House_name{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height:34px;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    line-height:34px;
+    padding-left: 10px;
+    border-radius:0px 0px 6px 6px;
+}
+section>.House_vr>li>a>.vr_play{
+    display:flex;
+    align-items:center;
+    position:absolute;
+    top: 38%;
+    left:0;
+    width:100%
+}
+section>.House_vr>li>a>.vr_play>div{
+    width:15%;
+    margin:auto;
+}
+section>.House_vr>li>a>.vr_play>div>img{
+    width:100%;
+}
+section>.House_vr>.sorry{
+    color:#333;
+    font-size:12px;
+    padding-top:80px;
+    height:100%;
+    text-align:center;
+}
+section>.House_vr{
+    // height:100%;
+    padding:0px 10px;
+}
+/* 尾部 */
+footer{
+    max-width:1024px;
+    min-width:360px;
+    margin:auto;
+    width:100%;
+}

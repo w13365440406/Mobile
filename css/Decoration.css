@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: black;
+    // background-color: #cccccc;
+}
+html,body{
+    height:100%;
+    background:rgb(245,245,245);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input,button{
+    border:none;
+    outline: none;
+    -webkit-appearance:none;
+}
+ul,ol{
+    list-style: none;
+}
+/* 第一个页面头部 */
+header{
+    position: fixed;
+    width:100%;
+    background:white;
+    border-bottom: 1px solid rgb(230,230,230);
+}
+header>div>a{
+    display: inline-block;
+    padding:10px 10px;
+}
+header>div>a>img{
+    width: 84px;
+    height:20px;
+}
+header>div>div{
+    display:inline-block;
+    padding:12px 0px;
+    height:44px;
+    vertical-align: top;
+    font-size:16px;
+}
+header>div>button{
+    float: right;
+    padding:10px;
+    background:white;
+    border:none;
+}
+header>div>button>i{
+    display:inline-block;
+    background:url(../images/icon_nav-caidan.png) no-repeat;
+    width:20px;
+    height:20px;
+    background-size: 100%;
+}
+/* 主题 */
+section{
+    padding-top: 45px;
+    // background:white;
+}
+.decorate{
+    background:white;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+section>.decorate>ul{
+    padding:10px 15px;
+    overflow:hidden;
+}
+section>.decorate>ul>li{
+    float: left;
+    width:33.33%;
+}
+section>.decorate>ul>li>a{
+    display:inline-block;
+    width:100%;
+    text-align: center;
+}
+/* 精选攻略 */
+section>.Elaborate{
+    background:white;
+    margin-bottom: 10px;
+}
+section>.Elaborate>ul>.Elaborate_li{
+    padding:12px 0px;
+    border:none;
+}
+section>.Elaborate>ul>.Elaborate_li>div{
+    border-left: 4px solid #33b371;
+    padding-left: 5px;
+    font-size:16px;
+}
+section>.Elaborate>ul>.list_li{
+    border-top: 1px solid rgb(242,242,242);
+}
+section>.Elaborate>ul>.list_li>a{
+    display:block;
+    padding:10px 12px;
+}
+section>.Elaborate>ul>.list_li>a>img{
+    width:70px;
+    height:70px;
+}
+section>.Elaborate>ul>.list_li>a>div{
+    display:inline-block;
+    width:78%;
+    margin-left: 10px;
+    vertical-align: top;
+    height:70px;
+}
+section>.Elaborate>ul>.list_li>a>div>div{
+    height:54px;
+    font-size:16px;
+}
+section>.Elaborate>ul>.list_li>a>div>span{
+    color:#999;
+    font-size:12px;
+}
+section>.Elaborate>ul>.list_li>a>div>span>.data_span{
+    margin-right:10px;
+    padding-left:12px;
+    background:url(../images/icon_24_eye.png) no-repeat;
+    background-size:12px 12px;
+}
+/* 直播 */
+section>.Live_broadcast{
+    background:white;
+    margin-bottom:10px;
+}
+section>.Live_broadcast>ul>.Elaborate_li{
+    border-bottom:1px solid rgb(242,242,242);
+}
+section>.Live_broadcast>ul>.broadcast_li{
+    margin-top: 10px;
+    padding:0px 12px;
+}
+section>.Live_broadcast>ul>.broadcast_li>a{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+}
+section>.Live_broadcast>ul>.broadcast_li>a>img{
+    width:100%;
+    border-radius: 5px;
+    display:block;
+}
+section>.Live_broadcast>ul>.broadcast_li>a>span{
+    position:absolute;
+    top: 15px;
+    left:0px;
+    display:inline-block;
+    width:100px;
+    padding:0px 15px;
+    border-radius:0px 13px 13px 0px;
+    background:rgba(21,198,129,0.9);
+    line-height: 26px;
+    height:26px;
+    z-index: 5;
+    color:white;
+}
+section>.Live_broadcast>ul>.broadcast_li>a>div{
+    color:white;
+    background:rgba(0,0,0,0.4);
+    height:44px;
+    position:absolute;
+    width:100%;
+    line-height:44px;
+    bottom: 0px;
+    padding:0px 10px;
+    font-size:16px;
+    border-radius:0px 0px 5px 5px;
+}
