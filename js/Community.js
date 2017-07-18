@@ -81,4 +81,11 @@ function Reply_li(){
 function numb(){
     $(".Reply_text span").text(200-$(".Reply_text textarea").val().length);
 }
+window.onscroll=function(){
+    if ($(document).scrollTop()>=600) {
+        $(".to_top").css("display","block");
+    }else{
+        $(".to_top").css("display","none");
+    };
+}
 // <li><img src="../images/a816425ab79b11e6963400163e000ee8.jpg@!60x60.jpg" alt=""><div><div class="user_name_title"><span>9组</span><div><span>07月11日</span><span>丨</span><span>3楼</span></div></div><div class="user_content"><p>'+Publish_text+'</p></div><div class="user_button"><a href="#!Community_Reply" class="input_a">回复</a><input type="button" name="" value="点赞(0)" class="input_a"></div></div></li>

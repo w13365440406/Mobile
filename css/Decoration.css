@@ -190,6 +190,68 @@ section>.Live_broadcast>ul>.broadcast_li>a>div{
     border-radius:0px 0px 5px 5px;
     text-align:left;
 }
+/* 尾部广告 */
+.tail_buttom{
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+}
+.tail_buttom>.tail_left,.tail_buttom>.tail_right{
+    display:inline-block;
+    width:49.5%;
+    padding:5px 0px 5px 60px;
+    position: relative;
+}
+.tail_buttom>.tail_left>div>i,.tail_buttom>.tail_right>div>i{
+    width:36px;
+    height:36px;
+    position: absolute;
+    background:url(../images/未标题3.png) no-repeat;
+    background-size:36px 36px;
+    top: 5px;
+    left:15px;
+}
+.tail_buttom>.tail_right>div>i{
+    background:url(../images/未标题-1.png) no-repeat;
+    background-size:30px 36px;
+}
+.tail_buttom>.tail_left>div>div,.tail_buttom>.tail_right>div>div{
+    color: #fff23d;
+    font-size:15px;
+    line-height:20px;
+}
+.tail_buttom>.tail_left>div>span,.tail_buttom>.tail_right>div>span{
+    display:block;
+    color: #fff;
+    font-size:12px;
+    line-height:16px;
+}
+.tail_buttom>.tail_left>div{
+    border-right: 1px solid rgba(153,153,153,0.7);
+}
+.Customer_service{
+    width:40px;
+    height:40px;
+    background:url(../images/QQ截图20170718145133.png) no-repeat;
+    background-size:40px 40px;
+    position: fixed;
+    bottom:56px;
+    right:10px;
+    border-radius:5px;
+}
+.to_top{
+    width:40px;
+    height:40px;
+    background:url(../images/QQ截图20170718145043.png) no-repeat center;
+    background-size:41px 41px;
+    border-radius:5px;
+    position:fixed;
+    bottom:106px;
+    right:10px;
+    border: 1px solid rgb(221,221,221);
+    display:none;
+}
 /*尾部*/
 .footer{
 width: 100%;

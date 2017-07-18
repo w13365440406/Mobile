@@ -71,3 +71,10 @@ for (var i = 0 ; i < list.length ; i++) {
 function afun () {
     window.history.back();
 }
+window.onscroll=function(){
+    if ($(document).scrollTop()>=600) {
+        $(".to_top").css("display","block");
+    }else{
+        $(".to_top").css("display","none");
+    };
+}
