@@ -226,10 +226,14 @@ section>.House_vr{
     // height:100%;
     padding:0px 10px;
 }
-/* 尾部 */
-footer{
-    max-width:1024px;
-    min-width:360px;
-    margin:auto;
-    width:100%;
+/*尾部*/
+.footer{
+width: 100%;
+height: 58px;
+background-color: white;
+margin-top:15px;
+color: #999;
+text-align: center;
+padding-top: 12px;
+font-size: 12px;
 }

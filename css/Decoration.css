@@ -35,6 +35,9 @@ header{
     width:100%;
     background:white;
     border-bottom: 1px solid rgb(230,230,230);
+    z-index:1000;
+    max-width:1024px;
+    min-width:360px;
 }
 header>div>a{
     display: inline-block;
@@ -68,6 +71,9 @@ header>div>button>i{
 section{
     padding-top: 45px;
     // background:white;
+    max-width:1024px;
+    min-width:360px;
+    margin:auto;
 }
 .decorate{
     background:white;
@@ -114,8 +120,8 @@ section>.Elaborate>ul>.list_li>a>img{
 }
 section>.Elaborate>ul>.list_li>a>div{
     display:inline-block;
-    width:78%;
-    margin-left: 10px;
+    width:74%;
+    margin-left: 3%;
     vertical-align: top;
     height:70px;
 }
@@ -137,6 +143,7 @@ section>.Elaborate>ul>.list_li>a>div>span>.data_span{
 section>.Live_broadcast{
     background:white;
     margin-bottom:10px;
+    padding-bottom:10px;
 }
 section>.Live_broadcast>ul>.Elaborate_li{
     border-bottom:1px solid rgb(242,242,242);
@@ -144,6 +151,7 @@ section>.Live_broadcast>ul>.Elaborate_li{
 section>.Live_broadcast>ul>.broadcast_li{
     margin-top: 10px;
     padding:0px 12px;
+    text-align:center;
 }
 section>.Live_broadcast>ul>.broadcast_li>a{
     position:relative;
@@ -180,4 +188,19 @@ section>.Live_broadcast>ul>.broadcast_li>a>div{
     padding:0px 10px;
     font-size:16px;
     border-radius:0px 0px 5px 5px;
+    text-align:left;
+}
+/*尾部*/
+.footer{
+width: 100%;
+height: 58px;
+background-color: white;
+margin-top:15px;
+color: #999;
+text-align: center;
+padding-top: 12px;
+font-size: 12px;
+max-width:1024px;
+min-width:360px;
+margin:auto;
 }
