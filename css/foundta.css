@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box; 
+}
+body{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    background-color: rgb(245,245,245);
+}
+a{
+  text-decoration: none;
+}
+input{
+    outline: none;
+    -webkit-appearance:none; 
+}
+.region{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-top: 35px;
+    height: 414px;
+}
+.region>.regionheader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    background-color:white;
+}
+.regionbox{
+    display: flex;
+    width: 100%;
+}
+.zuo{
+    
+    width: 30%;
+    height: 44px;
+    /*margin-bottom: 2px;*/
+    /*background-size: 16px 16px;*/
+}
+.zuo>a>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.foundta{
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.henggang{
+    width: 30px;
+    background-image: url(../images/henggang.png);
+    background-size: 12px 12px;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+    margin-top: 15px;
+    margin-left:20px;
+}
+.say1{
+    width: 100%;
+    height: 44px;
+    background-color: white;
+}
+.have{
+    height: 200px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+p{
+    margin-top: 10px;
+
+}
+p>span{
+    color: red;
+
+}
+.icon{
+    margin-top: 5px;
+}
+.icon>input{
+    border: 1px solid rgb(221,221,221);
+    width: 94%;
+    height: 42px;
+    border-radius: 5px;
+    padding-left: 10px;
+    vertical-align: top;
+    margin: auto;   
+}
+.icon1{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-top: 15px;
+    margin: auto;
+}
+#icon2{
+    width: 56%;
+    height: 42px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#icon3{
+    width: 36%;
+    height: 42px;
+    border: none;
+    background-color: #33b371;
+    color: white;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+#icon4{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#icon4>input{
+    width: 94%;
+    height: 44px;
+    border: none;
+    background-color: #33b371;
+    color: white;
+    border-radius: 5px;
+    margin-left: 0%;
+    margin-top: 20px; 
+}
+#text_1{
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+}
+.footer{
+    width: 100%;
+    height: 44px;
+    background-color: white;
+    margin-top:35px;
+    color: #999;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 12px;
+    margin-top: 190px;
+}
