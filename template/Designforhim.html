@@ -1,0 +1,92 @@
+<div class="detail">
+	<div class="gr_header">
+		<input type="image" ng-click="back()" src="../images/icon_gengduo.png">
+		<div class="gr_header_jane">找TA设计</div>
+		<input type="image" name="" src="../images/icon_nav-caidan.png" class="gr_img">
+	</div>
+	<main class="des_main">
+		<section class="des_section">
+			<div class="des_div_box">
+				<p>已有<span>811</span>位用户申请</p>
+			</div>
+			<form action="" id="form">
+				<div>
+					<input type="text" placeholder="请输入你的称呼" class="des_input des_click" required name="call">
+				</div>
+				<div>
+					<input type="tel" placeholder="请输入你的手机号" class="des_input des_click1">
+				</div>
+				<div class="des_div_box1">
+					<input type="text" placeholder="请输入短信验证码" class=" des_input des_click2">
+					<input type="button" value="获取短信验证码" class="des_input2 des_input">
+				</div>
+				<div>
+					<select class="des_input" >
+						<option>上海</option>
+					</select>
+				</div>
+				<div>
+					<input type="button" value="预约免费设计" class="sun_col" ng-click="getGesi()">
+				</div>
+				<p>*您的信息将会严格的保密，资料提交后客服将在224小时之内联系您</p>
+			</form>
+		</section>
+		<section class="mo_container vr_ul_box" ng-show ="isDesign" ng-repeat = "images in ProgrammingList">
+			<div class="mo_container_center">
+				<div class="mo_container_div">
+					<a href="#">
+						<img src="../images/{{images.img}}" alt="">
+					</a>
+				</div>
+				<div class="mo_container_div_box">
+					<div class="mo_container_small">
+						<a href="#">
+							<img src="../images/{{images.imgsmell}}" alt="">
+						</a>
+					</div>
+					<div class="mo_container_small mo_to">
+						<a href="#">
+							<img src="../images/{{images.imgsmellb}}" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="vr_modern">{{images.introduce}}</div>
+		</section>
+		<section class=" vr_ul_box  vr_word_box" ng-show ="isCase">
+			<ul class="ve_word_case">
+				<li>
+					<a href="">
+						<div class="vr_word">合景叠翠峰</div>
+						<p><span>江苏-苏州 89平米 8万/全包</span></p>
+						<ul>
+							<li><img src="../images/vr_word1.jpg"></li>
+							<li><img src="../images/vr_word2.jpg"></li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="vr_word">胜景天地地中海两居</div>
+						<p><span>山西-太原 85平米 8万/全包</span></p>
+						<ul>
+							<li><img src="../images/vr_word3.jpg"></li>
+							<li><img src="../images/vr_word4.jpg"></li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="vr_word">路劲郎悦简约欧式三居</div>
+						<p><span>江苏-苏州 120平米 10万/半包</span></p>
+						<ul>
+							<li><img src="../images/vr_word5.jpg"></li>
+							<li><img src="../images/vr_word6.jpg"></li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<div class="des_footer"></div>
+</div>

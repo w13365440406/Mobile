@@ -1,0 +1,91 @@
+<div class="detail">
+	<div class="gr_header dec_div_header">
+		<input type="image" ng-click="back()" src="../images/icon_gengduo.png">
+		<div class="gr_header_jane">装修案例</div>
+		<input type="image" name="" src="../images/icon_nav-caidan.png" class="gr_img">
+	</div>
+	<main class="gr_main dec_main">
+		<section class="gr_section dec_section">
+			<header class="dce_header">
+				<ul>
+					<li ng-click = "Getapartment()">
+						<a href="" class="des_input">公寓</a>
+					</li>
+					<li ng-click = "GetDesropbox()"><a href="" class="des_input">风格</a></li>
+					<li ng-click = "Getdessquares()"><a href="" class="des_input"> 面积</a></li>
+					<li ng-click = "Getdescolour()"><a href="" class="des_input"> 颜色</a></li>
+				</ul>
+			</header>
+		</section>
+		<section class="des_drop_down" ng-show = "Decorationcase">
+			<ul>
+				<li ng-click="down(0)"><a href="">不限</a></li>
+				<li ng-click="down(1)"><a href="">小户型</a></li>
+				<li ng-click="down(2)"><a href="">一居</a></li>
+				<li ng-click="down(3)"><a href="">二居</a></li>
+				<li ng-click="down(4)"><a href="">三居</a></li>
+				<li ng-click="down(5)"><a href="">四居</a></li>
+				<li ng-click="down(6)"><a href="">复试</a></li>
+				<li ng-click="down(7)"><a href="">别墅</a></li>
+				<li ng-click="down(8)"><a href="">公寓</a></li>
+			</ul>
+		</section>
+		<section class="des_drop_style des_drop_box"  ng-show = "Desropbox">
+			<ul>
+				<li ng-click="dex(0)"><a href="">不限</a></li>
+				<li ng-click="dex(1)"><a href="">简约</a></li>
+				<li ng-click="dex(2)"><a href="">现代</a></li>
+				<li ng-click="dex(3)"><a href="">中式</a></li>
+				<li ng-click="dex(4)"><a href="">欧式</a></li>
+				<li ng-click="dex(5)"><a href="">美式</a></li>
+				<li ng-click="dex(6)"><a href="">田园</a></li>
+				<li ng-click="dex(7)"><a href="">新古典</a></li>
+				<li ng-click="dex(8)"5><a href="">混搭</a></li>
+				<li ng-click="dex(9)"><a href="">地中海</a></li>
+				<li ng-click="dex(10)"><a href="">东南亚</a></li>
+				<li ng-click="dex(11)"><a href="">日式</a></li>
+				<li ng-click="dex(12)"><a href="">宜家</a></li>
+				<li ng-click="dex(13)"><a href="">北欧</a></li>
+				<li ng-click="dex(14)"><a href="">简欧</a></li>
+			</ul>
+		</section>
+		<section class="des_drop_style des_squares" ng-show = "dessquares">
+			<ul>
+				<li ng-click="diss(0)"><a href="">不限</a></li>
+				<li ng-click="diss(1)"><a href="">60m²以下</a></li>
+				<li ng-click="diss(2)"><a href="">60m²-80m²</a></li>
+				<li ng-click="diss(3)"><a href="">80m²-100m²</a></li>
+				<li ng-click="diss(4)"><a href="">100m²-120m²</a></li>
+				<li ng-click="diss(5)"><a href="">120m²-15m²</a></li>
+				<li ng-click="diss(6)"><a href="">150m²以上</a></li>
+			</ul>
+		</section>
+		<section class="des_drop_style des_colour" ng-show = "descolour">
+			<ul>
+				<li ng-repeat = "color in colorsList">
+					<a href="" style="background-color: rgb({{color.colors}});"></a>
+				</li>
+			</ul>
+		</section>
+		<section class="gr_section dec_section__box">
+				<ul class="mo_hot_label">
+					<a href="#!img">
+						<div>14张</div>
+						<li ng-repeat = "gray in sums_boxList | filterArr:filterPop:popValue">
+							<img lazy-src="../images/{{gray.img}}">
+							<div>{{gray.introduce}}</div>
+						</li>	
+					</a>
+				</ul>
+				<ul class="mo_hot_label mo">
+					<a href="#!img" >
+						<div>6张</div>
+						<li ng-repeat = "gray1 in sums_boxList | filterArr:filterPop:popValue">
+							<img lazy-src="../images/{{gray1.imgs}}">
+							<div>{{gray1.introduce}}</div>
+						</li>
+					</a>
+				</ul>
+			</section>
+	</main>
+</div>

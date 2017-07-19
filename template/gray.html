@@ -1,0 +1,68 @@
+<div class="detail">
+	<div class="gr_header">
+		<input type="image" ng-click="back()" src="../images/icon_gengduo.png">
+		<div class="gr_header_jane">简欧室内家装效果图</div>
+		<input type="image" name="" src="../images/icon_nav-caidan.png" class="gr_img">
+	</div>
+	<main class="gr_main">
+		<section class="gr_section">
+			<ul class="mo_hot_label" >
+					<a href="#!img">
+						<div>14张</div>
+						<li ng-repeat = "gray in grayList">
+							<img src="../images/{{gray.img}}">
+							<div>{{gray.introduce}}</div>
+						</li>	
+					</a>
+			</ul>
+			<ul class="mo_hot_label mo">
+					<a href="#!img" >
+						<div>6张</div>
+						<li ng-repeat = "gray1 in grayList1">
+							<img src="../images/{{gray1.img}}">
+							<div>{{gray1.introduce}}</div>
+						</li>
+					</a>
+			</ul>
+		</section>
+		<section class="gr_section_footer1">
+			<p>推荐相似</p>
+			<ul class="gr_section_ul">
+				<a href="" ng-repeat = "grayfoot in grayfooterList">
+					<li >{{grayfoot.Word}}</li>
+				</a>
+			</ul>
+		</section>
+		<section class="mo_container_hot gr_conta">
+			<div class="mo_container_box">
+				<a><button class="mo_hot" ng-click = "getGray()">加载更多图片<i></i></button></a>
+			</div>
+		</section>
+		<div class="mo_hot_box"  ng-if= "isShow1" on-infinite="loadMore()" distance="1%">
+			<section class="gr_section">
+				<ul class="mo_hot_label">
+					<a href="#!img">
+						<div>14张</div>
+						<li ng-repeat = "gray in sums_boxList">
+							<img lazy-src="{{basicUrl+gray.img}}">
+							<div>{{gray.introduce}}</div>
+						</li>	
+					</a>
+				</ul>
+
+				<ul class="mo_hot_label mo">
+					<a href="#!img" >
+						<div>6张</div>
+						<li ng-repeat = "gray1 in sums_boxList">
+							<img lazy-src="{{basicUrl+gray1.img}}">
+							<div>{{gray1.introduce}}</div>
+						</li>
+					</a>
+				</ul>
+			</section>
+		</div>
+	</main>
+	<footer class="mo_ownership">
+		<div>爱福窝版权所有<br>copyright 2016 fuwo.com</div>
+	</footer>
+</div>

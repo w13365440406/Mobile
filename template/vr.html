@@ -1,0 +1,121 @@
+<div class="detail">
+	<div class="gr_header">
+		<input type="image" ng-click="back()" src="../images/icon_gengduo.png">
+		<div class="gr_header_jane">黄娇</div>
+		<input type="image" name="" src="../images/icon_nav-caidan.png" class="gr_img">
+	</div>
+	<main class="des_main mo_content">
+		<section class="des_section">
+			<div class="vr_div_box">
+				<img src="../images/people1.jpg" alt="">
+				<div>
+					<span class="vr_span">黄娇</span>
+					<input type="button" name="" value="首席">
+					<input type="button" name="" value="认证"><br>
+					上海 上海 <span>3年</span>设计经验<span>152次</span>预约
+					<p>擅长现代简约等</p>
+				</div>
+			</div>
+			<div class="vr_div"><a href="#!Designforhim">找TA设计</a></div>
+		</section>
+		<section class="vr_section_box">
+			<header>
+				<ul>
+					<li><a href="" class="vr_Class vr_a" ng-click="vr_panorama()">720°全景(2)</a></li>
+					<li><a href="" class="vr_Class" ng-click="vr_design()">设计图</a></li>
+					<li><a href="" class="vr_Class" ng-click="vr_case()">施工案例</a></li>
+				</ul>
+			</header>
+		</section>
+		<section class="vr_section_box vr_box" >
+			<ul class="vr_ul_box" ng-show ="isPanorama">
+				<li>
+					<a href="http://3d.fuwo.com/ifuwo/pano/design/5c626d04b60e11e6a32700163e0018da/">
+						<div>
+							<img src="../images/vr_1.jpg" alt="">
+							<div class="vr_play"></div>
+						</div>
+						<div class="vr_modern">现代简约 155m²</div>
+					</a>
+				</li>
+				<li>
+					<a href="http://3d.fuwo.com/ifuwo/pano/design/3c125d90b50811e6861200163e0018da/">
+						<div>
+							<img src="../images/vr_2.jpg" alt="">
+							<div class="vr_play"></div>
+						</div>
+						<div class="vr_modern">欧式古典 117.5m²</div>
+					</a>
+				</li>
+				<li>
+					<a href="http://3d.fuwo.com/ifuwo/pano/design/7627dfe2b51111e6adfa00163e0018da/">
+						<div>
+							<img src="../images/vr_3.jpg" alt="">
+							<div class="vr_play"></div>
+						</div>
+						<div class="vr_modern">新中式 98m²</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="mo_container vr_ul_box" ng-show ="isDesign" ng-repeat = "images in ProgrammingList">
+			<div class="mo_container_center">
+				<div class="mo_container_div">
+					<a href="#!design">
+						<img src="../images/{{images.img}}" alt="">
+					</a>
+				</div>
+				<div class="mo_container_div_box">
+					<div class="mo_container_small">
+						<a href="#!design">
+							<img src="../images/{{images.imgsmell}}" alt="">
+						</a>
+					</div>
+					<div class="mo_container_small mo_to">
+						<a href="#!design">
+							<img src="../images/{{images.imgsmellb}}" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="vr_modern">{{images.introduce}}</div>
+		</section>
+		<section class=" vr_ul_box  vr_word_box" ng-show ="isCase">
+			<ul class="ve_word_case">
+				<li>
+					<a href="#!Caselibrary">
+						<div class="vr_word">合景叠翠峰</div>
+						<p><span>江苏-苏州 89平米 8万/全包</span></p>
+						<ul>
+							<li><img src="../images/vr_word1.jpg"></li>
+							<li><img src="../images/vr_word2.jpg"></li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#!Caselibrary">
+						<div class="vr_word">胜景天地地中海两居</div>
+						<p><span>山西-太原 85平米 8万/全包</span></p>
+						<ul>
+							<li><img src="../images/vr_word3.jpg"></li>
+							<li><img src="../images/vr_word4.jpg"></li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#!Caselibrary">
+						<div class="vr_word">路劲郎悦简约欧式三居</div>
+						<p><span>江苏-苏州 120平米 10万/半包</span></p>
+						<ul>
+							<li><img src="../images/vr_word5.jpg"></li>
+							<li><img src="../images/vr_word6.jpg"></li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+<footer class="mo_ownership">
+		<div>爱福窝版权所有<br>copyright 2016 fuwo.com</div>
+</footer>
+</div>

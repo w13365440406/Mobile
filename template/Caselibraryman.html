@@ -1,0 +1,21 @@
+<div class="detail">
+	<div class="gr_header">
+		<input type="image" ng-click="back()" src="../images/icon_gengduo.png">
+		<div class="gr_header_jane">案例馆</div>
+		<input type="image" name="" src="../images/icon_nav-caidan.png" class="gr_img">
+	</div>
+	<main class="des_main mo_content ca_main">
+		<section class="ca_section ca_bu">
+			<header class="ca_header">
+				<p>天朗美域地中海两居</p>
+			</header>
+		</section>
+		<section class="ca_section" ng-repeat = "word_case in CaselibrarymanList">
+			<p>{{word_case.Word}}</p>
+			<p><img src="../images/{{word_case.case_img}}"></p>
+		</section>
+	</main>
+<footer class="mo_ownership">
+		<div>爱福窝版权所有<br>copyright 2016 fuwo.com</div>
+</footer>
+</div>

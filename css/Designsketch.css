@@ -401,6 +401,7 @@ ul,ol{
 	color: white;
 	border: none;
 }
+/*轮播图插件*/
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -422,4 +423,76 @@ ul,ol{
 }
 .gr_main>.gr_conta{
 	margin-top: 10px;
+}
+.dec_main{
+	margin-top: 33px;
+}
+.dec_main>.dec_section{
+	background-color: white;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: -5px;
+	position: fixed;
+	z-index: 200;
+	top: 34px;
+}
+.dec_section>.dce_header{
+	width: 100%;
+	overflow: hidden;
+}
+.dec_section>.dce_header>ul{
+	width: 100%;
+}
+.dec_section>.dce_header>ul>li{
+ width:25%;
+ float: left;
+ border-left: 1px solid rgb(241,241,241);
+}
+.dec_section>.dce_header>ul>li>a{
+	width: 100%;
+	height: 40px;
+	display: block;
+	line-height:40px;
+	color: #666;
+	text-align: center;
+
+}
+.dec_section>.dce_header>ul>li>.des_input:focus{
+	color: rgb(51,179,113);
+}
+.detail>.dec_main>.dec_section__box{
+	margin: 0px;
+}
+.des_drop_down,.des_drop_style{
+	width: 100%;
+	overflow: hidden;
+	max-width: 640px;
+	min-width: 320px;
+	background-color: rgb(245,245,245);
+	position: fixed;
+	z-index: 100;
+	top: 84px;
+}
+.des_drop_down>ul,.des_drop_style>ul{
+	width: 100%;
+}
+.des_drop_down>ul>li,.des_drop_style>ul>li{
+	width: 33%;
+	float: left;
+	padding: 10px;
+}
+.des_drop_down>ul>li>a,.des_drop_style>ul>li>a{
+	width: 100%;
+	height: 30px;
+	display: block;
+	line-height: 28px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #fff;
+	border:1px solid #ccc;
+	overflow: hidden;
+	border-radius: 2px;
+}
+.des_drop_down>ul>li>a:focus,.des_drop_style>ul>li>a:focus{
+	border: 1px solid rgb(51,179,113);
 }
