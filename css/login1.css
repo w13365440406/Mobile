@@ -17,15 +17,15 @@ input{
     outline: none;
     -webkit-appearance:none; 
 }
-.region{
+.login1{
     width: 100%;
     max-width: 640px;
     min-width: 320px;
     margin: 0 auto;
     padding-top: 35px;
-    height: 414px;
+    height: 100%;
 }
-.region>.regionheader{
+.login1>.loginheader{
     position: fixed;
     left: 0;
     top: 0;
@@ -33,30 +33,29 @@ input{
     width: 100%;
     background-color:white;
 }
-.regionbox{
+.loginbox{
     display: flex;
     width: 100%;
 }
-.zuo{
-    
+.zuo1{
     width: 30%;
     height: 44px;
     /*margin-bottom: 2px;*/
     /*background-size: 16px 16px;*/
 }
-.zuo>a>img{
+.zuo1>a>img{
     width: 30px;
     height: 30px;
     margin-left: 10px;
     margin-top: 8px;
 }
-.foundta{
+.getlogin{
     width: 50%;
     display: flex;
     margin-top: 10px;
     margin-left: 8px;
 }
-.henggang{
+.henggang2{
     width: 30px;
     background-image: url(../images/henggang.png);
     background-size: 12px 12px;
@@ -67,87 +66,48 @@ input{
     margin-top: 15px;
     margin-left:20px;
 }
-.say1{
-    width: 100%;
+.getinput{
+    width:80%;
+    margin-left:13%;
+    margin-top: 10%;
+}
+.getinput>input{
+    width:92%;
     height: 44px;
-    background-color: white;
 }
-.have{
-    height: 200px;
-    color: black;
-    text-align: center;
-    line-height: 50px;
+.backgroundinput{
+    background-image: url(../images/xiaoren.png);
+    background-repeat: no-repeat;
+    background-position:5% 50%;
+    background-size: 20px 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding-left: 34px;
 }
-p{
-    margin-top: 10px;
-
+.backgroundinput1{
+    background-image: url(../images/shuo.png);
+    background-repeat: no-repeat;
+    background-position:5% 50%;
+    background-size: 20px 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding-left: 34px;
 }
-p>span{
-    color: red;
-
-}
-.icon{
-    margin-top: 5px;
-}
-.icon>input{
-    border: 1px solid rgb(221,221,221);
-    width: 94%;
-    height: 42px;
-    border-radius: 5px;
-    padding-left: 10px;
-    vertical-align: top;
-    margin: auto;   
-}
-.icon1{
-    width: 100%;
-    height: 400px;
-    background-color: white;
-    margin-top: 15px;
-    margin: auto;
-}
-#icon2{
-    width: 56%;
-    height: 42px;
-    border-radius: 5px;
-    padding-left: 10px;
-}
-#icon3{
-    width: 36%;
-    height: 42px;
-    border: none;
-    background-color: #33b371;
-    color: white;
-    margin-left: 5px;
-    padding-right: 5px;
-}
-#icon4{
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-#icon4>input{
-    width: 94%;
+.greenlogin{
+    width:92%;
     height: 44px;
-    border: none;
-    background-color: #33b371;
     color: white;
-    border-radius: 5px;
-    margin-left: 0%;
-    margin-top: 20px; 
+    background-color: rgb(51,179,113);
+    border-radius: 4px;
+    border:none;
 }
-#text_1{
-    width: 100%;
-    margin-top: 10px;
-    background-color: white;
-}
+/*尾部*/
 .footer{
     width: 100%;
-    height: 44px;
+    height: 58px !important;
     background-color: white;
-    margin-top:25px;
+    margin-top:10px;
     color: #999;
     text-align: center;
     padding-top: 12px;
     font-size: 12px;
-    margin-top: 190px;
+    margin-top: 102%;
 }
