@@ -1,5 +1,5 @@
 //轮播
-    var swiper = new Swiper('.swiper-container', {
+    var swiper1 = new Swiper('.swiper-container_1', {
         loop: true,
         pagination: '.swiper-pagination',
 		paginationClickable: true,
@@ -69,4 +69,21 @@ var mobileSelect4 = new MobileSelect({
                 ]}
             ],  
 });
+// 轮播二
+var swiper2 = new Swiper('#swiper-container_2', {
+    loop: true,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    effect: 'cube'
+});
+var mySwiper = new Swiper('#swiper-container_2',{
+    effect: 'cube'
+});
+// 定义函数,用于切换到对应的轮播
+function gotoIndex(ele,index){
+    $('.picture_3').removeClass('picture_3_highlight');//删除所有的CSS中的下划杠
+    $(ele).addClass('picture_3_highlight');
+    console.log(mySwiper);
+    mySwiper.slideTo(index, 1000, false);//切换到第一个slide，速度为1秒
+}
 

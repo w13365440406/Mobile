@@ -63,11 +63,15 @@ ul,ol{
 	align-items: center;
 	background-color: #ffffff;
 }
+.afw_container>.afw_header>.afw_header_box>a{
+	width: 104px;
+	height: 44px;
+	padding: 12px 10px;
+	margin-top:-3px;
+}
 .afw_container>.afw_header>.afw_header_box>a>img{
 	width: 84px;
 	height: 20px;
-	margin: 0 10px;
-	margin-top: 3px;
 }
 /*侧边菜单*/
 .afw_header_box{
@@ -77,7 +81,8 @@ ul,ol{
 	background-image: url(../images/xiQAAAAASUVORK5CYII=.png);
 	background-size: 20px 20px;
 	position: absolute;
-	left: 86%;
+	left: 84%;
+	top: 5%;
 	background-repeat: no-repeat;
 	width: 44px;
 	height: 44px;
@@ -85,7 +90,6 @@ ul,ol{
 	background-position: 50% 50%;
 }
 /*轮播*/
-
 .image_box>li{
 	width: 100%;
 	float: left;
@@ -123,11 +127,11 @@ ul,ol{
 /*侧边栏*/
 
 /*插件*/
-html, body {
+html, body{
     position: relative;
     height: 100%;
 }
-body {
+body{
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -138,11 +142,10 @@ body {
 .swiper-container{
 	overflow: hidden;
 }
-.swiper-slide {
+.swiper-slide{
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -273,6 +276,7 @@ section>div{
 }
 .Volume1{
 	display: inline-block;
+	width: 35%;
 	font-size:16px;
 	height: 40%;
 	line-height: 18px;
@@ -288,9 +292,8 @@ section>div{
 .Volume2{
 	display: inline-block;
 	font-size:9px;
-	position: absolute;
-	left: 60%;
-	top: 33%; 
+	width: 62%;
+	text-align: right;
 }
 .Volume2>span{
 	display: inline-block;
@@ -399,7 +402,7 @@ section>div{
 }
 #picture{
 	width: 100%;
-	height: 532px;
+	height: 480px;
 	margin-top: 10px;
 	background-color: white;
 }
@@ -410,14 +413,223 @@ section>div{
 #picture_2{
 	display: inline-block;
 	text-align: right;
-	width: 71%;
+	width: 62%;
 }
 .picture_3{
 	display: inline-block;
 	height: 36px;
 	padding: 2px;
-	border-bottom: 2px solid #33b371;
 	margin-left: 15px;
+}
+.picture_3_highlight{
+	border-bottom: 2px solid #33b371;
+}
+#swiper-container_2{
+	margin-top: 10px;
+	overflow: hidden;
+}
+#swiper-wrapper{
+	float: left;
+	width: 100%;
+}
+#picture_4{
+	width: 100%;
+	height: 370px;
+	line-height: 10px;
+}
+.picture_4{
+	width: 100%;
+	vertical-align: top;
+	margin-top: -20px; 
+}
+.picture_5{
+	width: 46%;
+	height: 100%;
+	display: inline-block;
+}
+.picture_6{
+	width: 46%;
+	height: 100%;
+	display: inline-block;
+}
+.picture_5>img{
+	width: 100%;
+	height: 185px;
+	margin-top: 6px;
+	margin-left: -1px;  
+}
+.picture_6>img{
+	width: 100%;
+	height: 185px;
+	margin-top: 6px;
+	margin-left: 1px; 
+}
+.picture_7{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	border-top: 1px solid rgb(221,221,221);
+	line-height: 40px;
+}
+.picture_7>a{
+	font-size: 16px;
+	color: #666;
+}
+/*装修论坛*/
+.Decoration_forum{
+	width: 100%;
+	height: 344px;
+	background-color: white;	
+}
+.Decoration_forum_1{
+	width: 62%;
+	display: inline-block;
+	color: #666;
+	text-align: right;
+}
+.Decoration_forum_1>a{
+	color: #666;
+}
+.Decoration_forum_2{
+	width: 100%;
+	height: 290px;
+}
+.Decoration_forum_2>a{
+	width: 100%;
+	height: 31%;
+	display: block;
+	margin-top: 10px;
+}
+.Decoration_forum_3{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	margin-left: 10px;
+
+}
+.Decoration_forum_3>img{
+	width: 70px;
+	height: 70px;
+}
+.Decoration_forum_4{
+	display: inline-block;
+	width: 68%;
+	height: 100%;	
+}
+.Decoration_forum_5{
+	font-size: 14px;
+	font-weight: bolder;
+}
+.Decoration_forum_6{
+	color: #666;
+}
+/*装修论坛*/
+.Decorationforum_1{
+	width: 100%;
+	height: 424px;
+	background-color: white;
+}
+.Decorationforum_2{
+	width: 100%;
+	height: 380px;
+}
+.Decorationforum_3{
+	width: 100%;
+	height: 17%;
+	border-bottom: 1px solid rgb(221,221,221);
+	display: block;
+	margin-left: 10px;
+}
+.Decorationforum_3>p{
+	width: 100%;
+	height: 56%;
+	vertical-align: bottom;
+	margin-top: 10px;
+	font-weight: bolder;
+	font-size: 15px;
+}
+.Decorationforum_4>div{
+	display: inline-block;
+}
+.Decorationforum_5>img{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.Decorationforum_6{
+	width: 68%;
+	text-align: right;
+}
+.Decorationforum_6>img{
+	width: 12px;
+	height: 12px;
+}
+/*.Decorationforum_7{
+	width: 71%;
+}
+.Decorationforum_8{
+	width: 72%;
+}*/
+.Decorationforum_5{
+	width: 4%;
+}
+.Decorationforum_9{
+	width: 22%;
+}
+.Decornone{
+	border: none;
+}
+/*尊享主材包*/
+.Enjoy_main_package_1{
+	width: 100%;
+	height: 92px;
+	background-color: white;
+	text-align: center;
+	line-height: 48px;
+}
+.Enjoy_main_package_2{
+	display: inline-block;
+	width: 45%;
+	height: 60%;
+	margin-top: 20px;
+	padding-right: 5%;
+	border-right: 1px solid rgb(221,221,221);
+}
+.Enjoy_main_package_2>img{
+	width: 158px;
+	height: 54px;
+}
+.Enjoy_main_package_3{
+	display: inline-block;
+	width: 45%;
+	height: 60%;
+	margin-left: 2%;
+}
+.Enjoy_main_package_3>img{
+	width: 158px;
+	height: 54px;
+}
+/*家居建材推荐*/
+.recommend_1{
+	width: 100%;
+	height: 260px;
+	background-color: white;
+	padding-left: 4%;
+}
+.recommend_2{
+	width: 31%;
+	height: 70%;
+	display: inline-block;
+	margin-left: 1%;
+	margin-top: 6%;
+}
+.recommend_2>img{
+	width: 100%;
+	height: 68%;
+}
+.recommend_3{
+	color: red;
 }
 /*尾部*/
 .footer{

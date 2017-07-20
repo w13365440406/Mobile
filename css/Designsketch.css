@@ -25,6 +25,67 @@ input,button{
 ul,ol{
 	list-style: none;
 }
+/*头部样式*/
+.afw_container{
+	width:100%;
+	/*height: 100%;*/
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: rgb(238,238,238);
+	/*padding-top: 44px;*/
+/*	overflow: hidden;*/
+}
+.afw_container:before,.afw_container:after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.afw_container>.afw_header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 44px;
+	width: 100%;
+	z-index: 1000;
+}
+.afw_container>.afw_header>.afw_header_box{
+	background-color: rgba(199,21,33,1);
+	height: 44px;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+}
+.afw_container>.afw_header>.afw_header_box>a{
+	width: 104px;
+	height: 44px;
+	padding: 12px 10px;
+}
+.afw_container>.afw_header>.afw_header_box>a>img{
+	width: 84px;
+	height: 20px;
+}
+/*侧边菜单*/
+.afw_header_box{
+	position: relative;
+}
+.Sidebar{
+	background-image: url(../images/xiQAAAAASUVORK5CYII=.png);
+	background-size: 20px 20px;
+	position: absolute;
+	left: 84%;
+	top: 5%;
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 44px;
+	background-color: white;
+	background-position: 50% 50%;
+}
 .mo_header{
 	position: fixed;
 	top: 0px;
@@ -46,11 +107,11 @@ ul,ol{
 	height: 20px;
 
 }
-.mo_header>.mo_word{
+#mo_word{
 	width: 100%;
 	height: 100%;
-	line-height: 250%;
-	font-size: 18px;
+	line-height: 260%;
+	font-size: 16px;
 
 }
 .mo_horizontal>button{
