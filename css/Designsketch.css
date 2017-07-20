@@ -114,6 +114,34 @@ ul,ol{
 	font-size: 16px;
 
 }
+.mo_header{
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+	height: 44px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	min-width: 320px;
+}
+.mo_header>.mo_logo{
+	height: 44px;
+	width:104px;
+	padding-top: 11px;
+	padding-left: 3px;
+}
+.mo_header>.mo_logo>img{
+	width: 84px;
+	height: 20px;
+
+}
+.mo_header>.mo_word{
+	width: 100%;
+	height: 100%;
+	line-height: 250%;
+	font-size: 18px;
+
+}
 .mo_horizontal>button{
     padding:12px;
     float: right;
@@ -458,26 +486,9 @@ ul,ol{
 	float: right;
 }
 .im_header{
-	width: 100%;
 	background-color: rgba(0,0,0,0.6);
 	color: white;
 	border: none;
-	position: fixed;
-	top: 0px;
-
-}
-.im_header>.i_input{
-	margin: auto 5%;
-}
-.im_header>.i_input1{
-	position: absolute;
-	right:5%;
-	top: 12px;
-}
-.im_header>.gr_header_jane{
-	white-space: nowrap;
-	position: absolute;
-	left:0;
 }
 /*轮播图插件*/
 .swiper-container {
@@ -495,7 +506,6 @@ ul,ol{
 }
 .detail>.swiper-container>.swiper-wrapper>.i_slide>.swiper-zoom-container>img{
 	margin-top: 44px;
-	display: block;
 }
 .i_detail{
 	background-color:black;

@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box; 
+}
+body{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    background-color: rgb(245,245,245);
+}
+a{
+  text-decoration: none;
+}
+input{
+    outline: none;
+    -webkit-appearance:none; 
+}
+.photo1{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-top: 35px;
+    height: 414px;
+}
+.photo1>.photoheader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    background-color:white;
+}
+.photobox{
+    display: flex;
+    width: 100%;
+}
+.zuo2{
+    width: 30%;
+    height: 44px;
+    /*margin-bottom: 2px;*/
+    /*background-size: 16px 16px;*/
+}
+.zuo2>a>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.getphoto{
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.henggang3{
+    width: 30px;
+    background-image: url(../images/henggang.png);
+    background-size: 12px 12px;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+    margin-top: 15px;
+    margin-left:20px;
+}
+.productbox{
+    width: 100%;
+    background-color:white;
+    margin-top: 10px;
+    height: 120px;
+}
+.getname>a>img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.getname{
+    margin-top: 12px;
+    display: inline-block;
+}
+.firstname{
+    display: inline-block;
+    font-size: 18px;
+}
+.firstname_1{
+    display: inline-block;
+    width: 63%;
+    text-align: right;
+}
+.experience{
+    margin-top: 12px;
+    margin-left:50px;
+    font-size: 13px;
+   
+}
+.getsolid{
+     border-right: 1px solid rgb(216,216,216);
+     margin-left: 4px;
+}
+.mone{
+    width: 100%;
+    height: 100px;
+    background-color:white;
+    color: black;
+    margin-top: 10px;
+}
+.mone>.evaluation{
+    color:black;
+    font-size: 14px;
+    padding-left:18px;
+    padding-top: 10px; 
+    border-bottom: 1px solid rgb(216,216,216);
+    width: 100%;
+}
+.evaluation>span{
+    color: red;
+}
+.mone>.evaluation>img{
+    width: 20px;
+    height: 23px;
+    padding-top: 8px;
+}
+#onepeople{
+   color: rgb(196,196,196); 
+}
+.smllimg>img{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin-top: 17px;
+    margin-left:22px;
+}
+.smllimg{
+    font-size: 14px;
+}
+.smllimg>span{
+    color: red;
+}
+.good{
+    font-size: 12px;
+    color: #666;
+    padding-left: 20px;
+}
+.case{
+    width: 100%;
+    height: 230px;
+    background-color: white;
+    margin-top: 10px;
+}
+.case1{
+    padding: 13px 13px;
+    border-bottom: 1px solid rgb(216,216,216);
+    font-size: 14px;
+}
+.getfamily{
+    font-size: 16px;
+    color: #333;
+    padding-top: 15px;
+    padding-left:10px;
+}
+.north{
+    color:#999;
+    padding-left: 10px;
+}
+.aimg>a>img{
+    width: 49%;
+    height: 104px;
+    padding:10px 10px;
+    margin-top: 10px;
+}
+.caseone{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    margin-top: 10px;
+}
+.casetwo{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    height: 58px;
+    background-color: white;
+    margin-top:15px;
+    color: #999;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 12px;
+}
+footer{
+    padding-top: 44px; 
+}
+.last{
+    width: 100%;
+    height: 44px;
+
+    background-color: rgb(76,76,76);
+}
+.last>a{
+    width: 49%;
+    display: inline-block;
+}
+.last>a>img{
+    width: 100%;
+    height: 44px;
+}
+footer>.last{
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+}
