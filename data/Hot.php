@@ -357,25 +357,25 @@
         "Word": "儿童卧室效果图大全",
         "Url": "children",
         "img": "i_2.jpg",
-        "introduce": "欧式风格家装效果图清新自然的住所"
+        "introduce": "欧式风格家装清新的住所"
     },
     {
         "Word": "厨房卫浴装修效果图",
         "Url": "Kitchen",
         "img": "i_3.jpg",
-        "introduce": "简欧风格家装效果图清新自然的住所"
+        "introduce": "简欧风格家装自然的住所"
     },
     {
         "Word": "美步楼梯图片大全",
         "Url": "mobo",
         "img": "i_4.jpg",
-        "introduce": "140平米简欧小家装欧式客厅装修设计效果图"
+        "introduce": "140平米简欧装修设计效果图"
     },
     {
         "Word": "大卧室隔断效果图大全",
         "Url": "Bedroom",
         "img": "i_5.jpg",
-        "introduce": "140平米简欧小家装餐厅时尚灯具装修设计效果图"
+        "introduce": "140平米简欧灯具装修设计效果图"
     },
     {
         "Word": "电脑桌面墙纸效果图",

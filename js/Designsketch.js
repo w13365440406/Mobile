@@ -18,7 +18,7 @@ var app = angular.module('add',["ngRoute","me-lazyload"]);
 			setTimeout(function(){
 				var swiper = new Swiper('.swiper-container', {
     			zoom: true,
-    			autoplay:5000,
+    			// autoplay:5000,
     			loop:true
 			});
 			},100)

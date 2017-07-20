@@ -397,9 +397,26 @@ ul,ol{
 	float: right;
 }
 .im_header{
+	width: 100%;
 	background-color: rgba(0,0,0,0.6);
 	color: white;
 	border: none;
+	position: fixed;
+	top: 0px;
+
+}
+.im_header>.i_input{
+	margin: auto 5%;
+}
+.im_header>.i_input1{
+	position: absolute;
+	right:5%;
+	top: 12px;
+}
+.im_header>.gr_header_jane{
+	white-space: nowrap;
+	position: absolute;
+	left:0;
 }
 /*轮播图插件*/
 .swiper-container {
@@ -417,9 +434,10 @@ ul,ol{
 }
 .detail>.swiper-container>.swiper-wrapper>.i_slide>.swiper-zoom-container>img{
 	margin-top: 44px;
+	display: block;
 }
 .i_detail{
-	background-color:rgba(0,0,0,0.6);
+	background-color:black;
 }
 .gr_main>.gr_conta{
 	margin-top: 10px;
